@@ -60,7 +60,7 @@
 	{
 		overflow: hidden;
 		margin: 0em auto;
-		width: 1200px;
+		width: 64%;
 	}
 	
 /*********************************************************************************/
@@ -137,7 +137,7 @@
 	{
 		display: inline-block;
 		padding: 0em 0.30em;
-		font-size: 1em;
+		font-size: 1vw;
 	}
 	
 	ul.contact li span
@@ -156,8 +156,8 @@
 	{
 		display: inline-block;
 		background: #3f3f3f;
-		width: 40px;
-		height: 40px;
+		width: 40%;
+		height: auto;
 		line-height: 40px;
 		border-radius: 20px;
 		text-align: center;
@@ -185,7 +185,7 @@
 		border-radius: 6px;
 		text-decoration: none;
 		font-weight: 700;
-		font-size: 1em;
+		font-size: 1vw;
 		color: #FFF;
 	}
 	
@@ -205,7 +205,7 @@
 	.box3,
 	.box4
 	{
-		width: 235px;
+		width: 100%;
 	}
 	
 	.box1,
@@ -229,7 +229,7 @@
 	.boxB,
 	.boxC
 	{
-		width: 384px;
+		width: 32%;
 	}
 
 	.boxA,
@@ -251,7 +251,7 @@
 	.tbox1,
 	.tbox2
 	{
-		width: 575px;
+		width: 60%;
 	}
 	
 	.tbox1
@@ -276,12 +276,12 @@
 	
 	.title h2
 	{
-		font-size: 2.7em;
+		font-size: 2vw;
 	}
 	
 	.title .byline
 	{
-		font-size: 1.3em;
+		font-size: 1vw;
 		color: rgba(255,255,255,0.60);
 	}
 
@@ -424,9 +424,9 @@
 
 	#menu
 	{
-		position: absolute;
-		top: 4.5em;
-		right: 0;
+		position: relative;
+		top: auto;
+		left: 40%;
 	}
 	
 	#menu ul
@@ -443,11 +443,11 @@
 	
 	#menu li a, #menu li span
 	{
-		padding: 1em 1.5em;
+		padding: 1vw 1.5vw;
 		letter-spacing: 1px;
 		text-decoration: none;
 		text-transform: uppercase;
-		font-size: 0.8em;
+		font-size: 0.9vw;
 		color: rgba(255,255,255,0.80);
 	}
 	
@@ -458,7 +458,7 @@
 	#menu .active a
 	{
 		background: #2651a8;
-		border-radius: 6px;
+		border-radius: 6vw;
 		color: rgba(255,255,255,1);
 	}
 	
@@ -478,12 +478,12 @@
 	
 	#banner .title h2
 	{
-		font-size: 4em;
+		font-size: 3vw;
 	}
 	
 	#banner .title .byline
 	{
-		font-size: 2em;
+		font-size: 2vw;
 	}
 	
 	#banner .button
@@ -492,7 +492,7 @@
 		padding: 1.40em 3em;
 		border-radius: 6px;
 		font-weight: 700;
-		font-size: 1em;
+		font-size: 1vw;
 		
 	}
 	
@@ -547,7 +547,7 @@
 	#copyright p
 	{
 		text-align: center;
-		font-size: 1em;
+		font-size: 1vw;
 		color: rgba(255,255,255,0.3);
 	}
 	
@@ -605,7 +605,7 @@
 		display: block;
 		padding: 1em 0em;
 		color: rgba(0,0,0,1);
-		font-size: 2em;
+		font-size: 2vw;
 	}
 	
 	#three-column .title h2
@@ -632,7 +632,7 @@
 
 	.slideshow-container
 	{
-		max-width: 1000px;
+		max-width: 60%;
 		position: relative;
 		margin: auto;
 	}
@@ -712,9 +712,20 @@
 	}
 
 	/* On smaller screens, decrease text size */
-	@media only screen and (max-width: 300px)
+	@media  screen and (max-width: 300px)
 	{
 		.prev, .next,.text {font-size: 11px}
+	}
+
+	/* Tablet Landscape */
+	@media screen and (max-width: 1060px) {
+		#primary { width:67%; }
+		#secondary { width:30%; margin-left:3%;}
+	}
+	/* Tabled Portrait */
+	@media screen and (max-width: 768px) {
+		#primary { width:100%; }
+		#secondary { width:100%; margin:0; border:none; }
 	}
 
 	* {box-sizing: border-box}
