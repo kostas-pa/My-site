@@ -1,2 +1,2 @@
-# This site is a small side project of a course for my university and does not represent my actual skills and work 
+# This site my personal website where you can find some info about me and my repositories
 You can see it here: https://kostas-pa.github.io/My-site/
